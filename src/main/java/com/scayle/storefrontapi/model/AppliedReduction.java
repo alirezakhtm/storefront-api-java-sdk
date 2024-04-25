@@ -16,7 +16,7 @@ public class AppliedReduction implements ApiObjectInterface {
     * 
     */
     @SerializedName("amount")
-    Object amount;
+    AppliedReductionAmount amount;
 
     /**
     * 

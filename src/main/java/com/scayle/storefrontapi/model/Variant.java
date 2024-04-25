@@ -70,12 +70,6 @@ public class Variant implements ApiObjectInterface {
     /**
     * 
     */
-    @SerializedName("customData")
-    Map<String, CustomData> customData;
-
-    /**
-    * 
-    */
     @SerializedName("createdAt")
     OffsetDateTime createdAt;
 

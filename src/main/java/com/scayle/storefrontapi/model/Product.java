@@ -41,7 +41,7 @@ public class Product implements ApiObjectInterface {
     * 
     */
     @SerializedName("categories")
-    List<ProductCategory> categories;
+    List<List<ProductCategory>> categories;
 
     /**
     * 
@@ -54,12 +54,6 @@ public class Product implements ApiObjectInterface {
     */
     @SerializedName("images")
     List<Image> images;
-
-    /**
-    * 
-    */
-    @SerializedName("customData")
-    Map<String, CustomData> customData;
 
     /**
     * Identifies whether a product is active or not
@@ -94,26 +88,8 @@ public class Product implements ApiObjectInterface {
     /**
     * 
     */
-    @SerializedName("pricePromotionInfo")
-    Object pricePromotionInfo;
-
-    /**
-    * 
-    */
     @SerializedName("priceRange")
     PriceRange priceRange;
-
-    /**
-    * 
-    */
-    @SerializedName("reductionRange")
-    ReductionRange reductionRange;
-
-    /**
-    * 
-    */
-    @SerializedName("lowestPriorPrice")
-    LowestPriorPrice lowestPriorPrice;
 
     /**
     * 
@@ -150,11 +126,5 @@ public class Product implements ApiObjectInterface {
     */
     @SerializedName("updatedAt")
     OffsetDateTime updatedAt;
-
-    /**
-    * 
-    */
-    @SerializedName("indexedAt")
-    OffsetDateTime indexedAt;
 
 }
